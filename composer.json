@@ -1,0 +1,12 @@
+{
+  "name": "nexmo/voice-aws-transcribe-php",
+  "description": "PHP script to transcribe voice to text using AWS Transcribe service.",
+  "minimum-stability": "stable",
+  "license": "mit",
+  "authors": [
+    {
+      "name": "Adam Culp",
+      "email": "adam.culp@vonage.com"
+    }
+  ]
+}
