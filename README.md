@@ -47,7 +47,7 @@ Copy the provided `.env.example` file to a new file called `.env`:
 cp .env.example > .env
 ```
 
-Then update the values with those from the IBM Tone Analyzer service Manage page, and then save.
+Then update the values as needed from AWS and Nexmo, and then save.
 
 ```
 APP_ID=voice-aws-transcribe-php
