@@ -93,7 +93,7 @@ These URLs will need the ngrok addresses provided after launching ngrok via CLI.
 
 For example:
 ```
-    Event URL = https://567d01f9.ngrok.io/webhooks/recording
+    Event URL = https://567d01f9.ngrok.io/webhooks/event
     Answer URL = https://567d01f9.ngrok.io/webhooks/answer
 ```
 
