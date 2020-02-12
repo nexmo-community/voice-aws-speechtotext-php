@@ -60,7 +60,7 @@ $app->get('/webhooks/answer', function (Request $request, Response $response) {
 /**
  * Event URL used by Nexmo for update POSTs
  */
-$app->post('/webhooks/recording', function (Request $request, Response $response) {
+$app->post('/webhooks/event', function (Request $request, Response $response) {
 
     $params = $request->getParsedBody();
 
