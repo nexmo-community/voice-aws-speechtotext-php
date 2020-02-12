@@ -19,12 +19,8 @@ $app = AppFactory::create();
 /**
  * Answer the call and prompt using NCCO flow
  */
-$app->any('/webhooks/answer', function (Request $request, Response $response) {
+$app->get('/webhooks/answer', function (Request $request, Response $response) {
     $uri = $request->getUri();
-
-    if ($request->getMethod() != 'GET') {
-        return $response->withStatus(403);
-    }
 
     // NOTE: The usage of $uri below will not work when using ngrok, as getHost() will return localhost
     $ncco = [
