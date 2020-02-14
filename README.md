@@ -1,6 +1,6 @@
 # Amazon Transcribe with Nexmo Voice and AWS S3 using PHP
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://nexmo.dev/voice-transcribe-php-heroku)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://nexmo.dev/aws-nexmo-transcribe-php)
 
 PHP example script to be used as a callback by Nexmo Voice to prompt a caller for a message. Then, after the message is received, download the MP3 file to be uploaded to AWS S3 prior to creating a Amazon Transcribe job to convert the contents to text.
 
