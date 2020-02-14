@@ -1,0 +1,6 @@
+{
+    "name": "Nexmo-Community voice-aws-speechtotext-php example",
+    "description": "PHP script to transcribe voice to text using AWS Transcribe service",
+    "repository": "https://github.com/nexmo-community/voice-aws-speechtotext-php",
+    "keywords": ["php", "aws", "transcribe", "s3"]
+}
