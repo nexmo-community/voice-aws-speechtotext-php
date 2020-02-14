@@ -15,6 +15,10 @@ For this example app the following are needed:
 * [AWS](https://aws.amazon.com/) account
 * [ngrok](https://ngrok.io) installed locally (more details later)
 
+## Welcome to Nexmo
+
+If you're new to Nexmo, you can [sign up for a Nexmo account](https://dashboard.nexmo.com/sign-up?utm_source=DEV_REL&utm_medium=github&utm_campaign=voice-aws-speechtotext-php) and get some free credit to get you started.
+
 ## AWS Services
 
 For this example we will use multiple AWS services, such as [AWS S3](https://aws.amazon.com/s3/) and [Amazon Transcribe](https://aws.amazon.com/transcribe/).
@@ -115,6 +119,18 @@ After leaving a message, there should be an MP3 file added to the [bucket in S3]
 
 Upon successful transcription the final text can be downloaded, or used in applications that can can connect and download it.
 
-## Blog Post
+## Accompanying Blog Post
 
 For a more full explanation and example, check out the [blog post](https://www.nexmo.com/blog).
+
+## Getting Help
+
+We love to hear from you so if you have questions, comments or find a bug in the project, let us know! You can either:
+
+* Open an issue on this repository
+* Tweet at us! We're [@NexmoDev on Twitter](https://twitter.com/NexmoDev)
+* Or [join the Nexmo Community Slack](https://developer.nexmo.com/community/slack)
+
+## Further Reading
+
+* Check out the Developer Documentation at <https://developer.nexmo.com>

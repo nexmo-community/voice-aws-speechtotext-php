@@ -30,7 +30,7 @@ $app->get('/webhooks/answer', function (Request $request, Response $response) {
         [
             'action' => 'record',
             'eventUrl' => [
-                $uri->getScheme().'://'.$uri->getHost().':'.$uri->getPort().'/webhooks/fetch'
+                $uri->getScheme().'://'.$uri->getHost().'/webhooks/fetch'
             ],
             'endOnSilence' => '3',
             'endOnKey' => '#',
@@ -44,7 +44,7 @@ $app->get('/webhooks/answer', function (Request $request, Response $response) {
             'action' => 'notify',
             'payload' => ['followup'=>true],
             'eventUrl' => [
-                $uri->getScheme().'://'.$uri->getHost().':'.$uri->getPort().'/webhooks/transcribe'
+                $uri->getScheme().'://'.$uri->getHost().'/webhooks/transcribe'
             ],
             'eventMethod' => "POST"
         ],
