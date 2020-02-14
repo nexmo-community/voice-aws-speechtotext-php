@@ -22,7 +22,6 @@ $app = AppFactory::create();
 $app->get('/webhooks/answer', function (Request $request, Response $response) {
     $uri = $request->getUri();
 
-    // NOTE: The usage of $uri below will not work when using ngrok, as getHost() will return localhost
     $ncco = [
         [
             'action' => 'talk',
@@ -43,7 +42,7 @@ $app->get('/webhooks/answer', function (Request $request, Response $response) {
         ],
         [
             'action' => 'notify',
-            'payload' => ['foo'=>'bar'],
+            'payload' => ['followup'=>true],
             'eventUrl' => [
                 $uri->getScheme().'://'.$uri->getHost().':'.$uri->getPort().'/webhooks/transcribe'
             ],
