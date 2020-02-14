@@ -4,9 +4,20 @@
 
 PHP example script to be used as a callback by Nexmo Voice to prompt a caller for a message. Then, after the message is received, download the MP3 file to be uploaded to AWS S3 prior to creating a Amazon Transcribe job to convert the contents to text.
 
+For more detail see the accompanying blog post at: [https://www.nexmo.com/blog/2020/02/14/aws-transcribe-with-nexmo-voice-using-php](https://www.nexmo.com/blog/2020/02/14/aws-transcribe-with-nexmo-voice-using-php)
+
+## Prerequisites
+For this example app the following are needed:
+
+* [PHP](https://www.php.net/) installed locally (version 7.3+ preferred)
+* Composer installed [globally](https://getcomposer.org/doc/00-intro.md#globally)
+* [Nexmo](https://www.nexmo.com/) account
+* [AWS](https://aws.amazon.com/) account
+* [ngrok](https://ngrok.io) installed locally (more details later)
+
 ## AWS Services
 
-For this example we will multiple AWS services, such as [AWS S3](https://aws.amazon.com/s3/) and [Amazon Transcribe](https://aws.amazon.com/transcribe/).
+For this example we will use multiple AWS services, such as [AWS S3](https://aws.amazon.com/s3/) and [Amazon Transcribe](https://aws.amazon.com/transcribe/).
 
 In S3, create a bucket that will be used to store the MP3 files retrieved from Nexmo. Then make note of the bucket name for later inclusion to the `.env` file.
 
@@ -36,7 +47,6 @@ Using the [AWS IAM](https://aws.amazon.com/iam/), add a new user and add the fol
 }
 ```
 
-
 ## Running the App
 
 This sample app uses a `.env` file to provide the API key and URL to the IBM Tone Analyzer API.
@@ -44,10 +54,10 @@ This sample app uses a `.env` file to provide the API key and URL to the IBM Ton
 Copy the provided `.env.example` file to a new file called `.env`:
 
 ```
-cp .env.example > .env
+cp .env.example .env
 ```
 
-Then update the values as needed from AWS and Nexmo, and then save.
+Then update the values as needed from AWS and Nexmo, and save.
 
 ```
 APP_ID=voice-aws-transcribe-php
