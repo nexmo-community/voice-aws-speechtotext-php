@@ -88,12 +88,8 @@ $app->post('/webhooks/fetch', function (Request $request, Response $response) {
 
     // Create AWS S3 Client
     $S3Client = new S3Client([
-        'credentials' => [
-            'key'    => $_ENV['AWS_ACCESS_KEY_ID'],
-            'secret' => $_ENV['AWS_SECRET_ACCESS_KEY'],
-        ],
         'region' => $_ENV['AWS_REGION'],
-        'version' => 'latest',
+        'version' => 'latest'
     ]);
 
     $adapter = new AwsS3Adapter($S3Client, $_ENV['AWS_S3_BUCKET_NAME']);
@@ -115,12 +111,8 @@ $app->post('/webhooks/transcribe', function (Request $request, Response $respons
 
     // Create Amazon Transcribe Client
     $awsTranscribeClient = new TranscribeServiceClient([
-        'credentials' => [
-            'key'    => $_ENV['AWS_ACCESS_KEY_ID'],
-            'secret' => $_ENV['AWS_SECRET_ACCESS_KEY'],
-        ],
         'region' => $_ENV['AWS_REGION'],
-        'version' => 'latest',
+        'version' => 'latest'
     ]);
 
     $transcriptionResult = $awsTranscribeClient->startTranscriptionJob([
